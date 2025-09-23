@@ -26,7 +26,7 @@ const projects = [
     category: "Sustainability App",
     description:
       "Mobile-first application helping users track their carbon footprint with gamification elements, social features, and integration with IoT devices.",
-    image: "/green-sustainability-mobile-app-interface-with-cha.jpg",
+    image: "/green-sustainability-mobile-app-interface-with-chart.jpg", // ✅ fixed
     technologies: ["React Native", "Node.js", "MongoDB", "Firebase", "TensorFlow", "IoT"],
     liveUrl: "https://ecotracker.app",
     githubUrl: "https://github.com/alexchen/ecotracker",
@@ -78,7 +78,7 @@ const projects = [
     category: "IoT Platform",
     description:
       "Unified smart home control system with voice commands, automation rules, and energy optimization. Supports 100+ device types.",
-    image: "/smart-home-control-dashboard-with-device-managemen.jpg",
+    image: "/smart-home-control-dashboard-with-device-management.jpg", // ✅ fixed
     technologies: ["React", "Python", "MQTT", "InfluxDB", "TensorFlow", "Raspberry Pi"],
     liveUrl: "https://smarthome-hub.io",
     githubUrl: "https://github.com/alexchen/smarthome-hub",
@@ -86,6 +86,7 @@ const projects = [
     stats: { devices: "1M+", homes: "50K+", energy: "30%" },
   },
 ]
+
 
 function ProjectCard({ project, index }: { project: (typeof projects)[0]; index: number }) {
   const [isHovered, setIsHovered] = useState(false)
